@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Blog Posts Section */
+#blog-posts {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#blog-posts h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Blog Post */
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.post .date {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.post p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.post a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .post h3 {
+        font-size: 1.5em;
+    }
+}
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+.dark-mode header {
+    background-color: #444;
+}
+
+.dark-mode .post {
+    background-color: #555555;
+    color: #f9f9f9;
+}
+
+.dark-mode footer {
+    background-color: #444;
+}
+
+.dark-mode a {
+    color: #80b3ff;
+}
+
+.dark-mode .post a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode header nav ul li a:hover {
+    background-color: #555555;
+}
+/* Dark Mode Toggle Button */
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008CBA;  /* Bright blue */
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #007B9E;  /* Darker blue on hover */
+    transform: scale(1.1);  /* Slightly enlarges when hovered */
+}
+/* Full Description hidden by default */
+.full-description {
+    display: none; /* Hides the full content initially */
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555;
+}
+.read-more-wrapper {
+    display: inline-block;
+    margin-top: 10px;
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .read-more {
+    color: #FFCC00; /* Change the read more link color to something bright in dark mode */
+}
+
+body.dark-mode .full-description {
+
+    color: #fff; /* Make sure the text is visible in dark mode */
+}
+/* Dark Mode Title Style */
+body.dark-mode h3 {
+    color: #fff; /* Bright white color for dark mode */
+}
